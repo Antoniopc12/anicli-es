@@ -1,10 +1,10 @@
 # anicli-es
 
-Herramienta para ver animé desde la línea de comandos, con subtitulos en español; usa el sitio [monoschinos](https://monoschinos2.com/) para extraer los animes.
+Herramienta para ver anime desde la línea de comandos, con subtitulos en español; usa el sitio [animeflv](https://www4.animeflv.net/) para extraer los animes.
 
 ## Uso
 
-	# Ver animé
+	# Ver anime
 	anicli-es <query>
 
 <p align="center">

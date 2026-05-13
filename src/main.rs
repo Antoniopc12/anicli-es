@@ -37,13 +37,13 @@ fn main() {
                 checked = true;
                 matches.free[0].clone()
             } else {
-                Input::new().with_prompt("Buscar animé").interact().unwrap()
+                Input::new().with_prompt("Buscar anime").interact().unwrap()
             };
 
         let resultados: Vec<Vec<String>> = query_results(search_query(query.trim().to_string()));
 
         if resultados[0].is_empty() {
-            println!("No se encontró ningun animé con ese nombre.");
+            println!("No se encontró ningun anime con ese nombre.");
             continue;
         }
 
@@ -53,7 +53,7 @@ fn main() {
         let episodios: Vec<String> = get_episodes(resultados[2].index(seleccion as usize).to_string());
 
         if episodios.is_empty() {
-            println!("No se encontrarón episodios, intenta con otro animé.");
+            println!("No se encontrarón episodios, intenta con otro anime.");
             continue;
         } 
 
