@@ -221,9 +221,7 @@ pub fn mpv(nombre: &String, links: &[String], episodio: i32) {
     println!("\nAbriendo {} en tu navegador...", nombres_menu[sel as usize]);
 
     // Comando universal para abrir el navegador predeterminado en Linux
-    let _ = Command::new("xdg-open")
-        .arg(url_final)
-        .spawn();
+    let _ = open::that(url_final);
 
     // Volvemos al control de episodios para que puedas saltar al siguiente tras abrirlo
     controller(episodio, links.to_vec(), nombre);
